@@ -1,4 +1,3 @@
-
 ---
 title:  沙盘推演IPO重启的影响-长赢指数投资
 date: 2015-11-07
@@ -41,5 +40,3 @@ chinaetfs
 
 
 [留言](javascript:;)
-
-

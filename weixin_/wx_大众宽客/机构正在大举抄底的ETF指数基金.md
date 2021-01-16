@@ -1,4 +1,3 @@
-
 ---
 title:   机构正在大举抄底的ETF指数基金-大众宽客
 date: 2018-07-21
@@ -29,13 +28,3 @@ dzkuanke
 
 
 <img class="" data-backh="783" data-backw="558" data-before-oversubscription-url="https://mmbiz.qpic.cn/mmbiz_png/PKw3FQPmhIiaB9hAe87Do8GJAXl1qyECVfuuUAiaYTFjJgfWjIiacWC8CKwGRETtKO8K5WqhG2Kv6Q1a62lYbqT6A/0?wx_fmt=png" data-copyright="0" data-ratio="1.403030303030303" data-s="300,640" src="https://mmbiz.qpic.cn/mmbiz_png/PKw3FQPmhIiaB9hAe87Do8GJAXl1qyECVfuuUAiaYTFjJgfWjIiacWC8CKwGRETtKO8K5WqhG2Kv6Q1a62lYbqT6A/640?wx_fmt=png" data-type="png" data-w="660" style="width: 100%;height: auto;"/>
-
-
-
-
-
-
-
-
-
-

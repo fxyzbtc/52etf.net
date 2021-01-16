@@ -1,4 +1,3 @@
-
 ---
 title:  周二读书（8）投资心理学（The psychology of Investing）-长赢指数投资
 date: 2016-05-17
@@ -130,16 +129,3 @@ chinaetfs
 
 
 **微信扫一扫赞赏作者**
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,3 @@
-
 ---
 title:  ETF计划7月特别推送：收割TMT-长赢指数投资
 date: 2015-07-04
@@ -85,5 +84,3 @@ chinaetfs
 
 
 [留言](javascript:;)
-
-

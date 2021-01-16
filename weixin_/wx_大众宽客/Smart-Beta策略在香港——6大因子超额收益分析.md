@@ -1,4 +1,3 @@
-
 ---
 title:   Smart-Beta策略在香港——6大因子超额收益分析-大众宽客
 date: 2018-12-12
@@ -66,16 +65,3 @@ dzkuanke
 
 <img class="" data-copyright="0" data-ratio="0.5182829888712241" data-s="300,640" src="https://mmbiz.qpic.cn/mmbiz_png/PKw3FQPmhIiaIMicnuD8ibRwsBqeMWtGicaU0bmouDJdSJsbOibWBGCqWiajJVleviaCTAwIjibaNiagxYicyKmFzHWgjOKg/640?wx_fmt=png" data-type="png" data-w="1258"/>
 - **价值**和**红利**投资组合的**超额收益最高。**- **低波动**投资组合的**风险调整后收益最高**。- **低波动**和**高质量**投资组合的**波动率和最大收益回撤均小****于基准**指数。- **小盘**和**价值**投资组合则**波动较大（**价值组合波动较大，有点儿反常识**）**- **动量**和**小盘**投资组合的成分股更换速度较快，导致更高的投资组合换手率。
-
-
-
-
-
-
-
-
-
-
-
-
-

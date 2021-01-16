@@ -249,3 +249,5 @@ title: "文摘"
     gen_tag_pages(TAGS_PATHS, Path('about/tags.md'), tpl=tags_tpl)
 
 
+# todo: 提取文摘的关键字，写入md
+# todo: 提供文摘独立的tags和index页面

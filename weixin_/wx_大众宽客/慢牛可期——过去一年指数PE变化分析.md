@@ -1,4 +1,3 @@
-
 ---
 title:   慢牛可期 —— 过去一年指数PE变化分析-大众宽客
 date: 2017-11-03
@@ -51,13 +50,3 @@ dzkuanke
 <img data-s="300,640" data-type="png" src="https://mmbiz.qpic.cn/mmbiz_png/PKw3FQPmhIjysle29LwZe7CXOOCygWMShkvI5tJb6N4o652Ioy8QSqVEyZibz16DqKohWxbib0AUGAicnFjs7uticg/0?wx_fmt=png" data-copyright="0" style="" class="" data-ratio="0.6" data-w="720"/>
 
 <img data-s="300,640" data-type="png" src="https://mmbiz.qpic.cn/mmbiz_png/PKw3FQPmhIjysle29LwZe7CXOOCygWMSWsoo66OS3cslYIanHqaic5GCRfEq0EiaJWceIWibIWzoEbFH7lJk6w87Q/0?wx_fmt=png" data-copyright="0" style="" class="" data-ratio="0.6" data-w="720"/>
-
-
-
-
-
-
-
-
-
-

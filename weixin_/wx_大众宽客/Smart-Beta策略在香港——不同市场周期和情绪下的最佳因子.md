@@ -1,4 +1,3 @@
-
 ---
 title:   Smart-Beta策略在香港——不同市场周期和情绪下的最佳因子-大众宽客
 date: 2018-12-13
@@ -76,11 +75,3 @@ dzkuanke
 
 
 欢迎大家关注我的公众号<h-char unicode="201c" class="biaodian cjk bd-open punct">“</h-char>大众宽客<h-char unicode="201d" class="biaodian cjk bd-close bd-end punct">”</h-char><h-char unicode="ff0c" class="biaodian cjk bd-end bd-cop bd-hangable bd-jiya"><h-inner>，</h-inner></h-char>通过深入的数据<h-char unicode="3001" class="biaodian cjk bd-end bd-cop bd-hangable bd-jiya"><h-inner>、</h-inner></h-char>直观的图表<h-char unicode="ff0c" class="biaodian cjk bd-end bd-cop bd-hangable bd-jiya"><h-inner>，</h-inner></h-char>展示指数基金投资价值。
-
-
-
-
-
-
-
-

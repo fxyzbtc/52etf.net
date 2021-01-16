@@ -1,4 +1,3 @@
-
 ---
 title:   华为谈AI的挑战和机遇（节选自哈佛商业评论对华为轮值CEO专访）-大众宽客
 date: 2018-11-27
@@ -62,10 +61,3 @@ dzkuanke
 
 参考阅读
 1. [美股史上最长牛市的“发动机”](http://mp.weixin.qq.com/s?__biz=MzAwMTc1MDcwNw==&amp;mid=2648273079&amp;idx=1&amp;sn=1c395b3ebcc2d8b3492cb553027d80fc&amp;chksm=82f9336bb58eba7d5fa46e3d83e47c01ea0d9145994a552806aa387ede456451b0ced1985155&amp;scene=21#wechat_redirect)1. [告别平庸时代 - Average is Over](http://mp.weixin.qq.com/s?__biz=MzAwMTc1MDcwNw==&amp;mid=2648271966&amp;idx=1&amp;sn=86dff0506c7c0dfdca1f7b8756595906&amp;chksm=82f92f82b58ea694f03e4c9eb05438b791b8b7212ad6e9ad97aa6459b7ac4c53f1ee048fe934&amp;scene=21#wechat_redirect)
-
-
-
-
-
-
-

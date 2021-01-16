@@ -1,4 +1,3 @@
-
 ---
 title:   “基于PE定投相对低估指数”系列合集-大众宽客
 date: 2016-08-12
@@ -49,11 +48,3 @@ dzkuanke
 **长按下方图片，关注『大众宽客』**
 
 <img data-s="300,640" data-type="png" data-ratio="1" data-w="129" width="auto" width="auto" src="http://mmbiz.qpic.cn/mmbiz/PKw3FQPmhIjpOw70YiaHYQTPb4TKoqns9M2zxiaLBv1cUZiaEHqVweTjuaW7lzQUemHLxv6k8MpLq8r6cvFhqmDfg/640?wx_fmt=png" style="box-sizing: border-box !important; word-wrap: break-word !important; width: auto !important; visibility: visible !important;"/>
-
-
-
-
-
-
-
-
