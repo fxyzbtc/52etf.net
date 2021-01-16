@@ -17,7 +17,7 @@ META_INVALID_TITLE_CHARS = re.compile(r'[\[\]\"“”]')
 META_INVALID_TAG_CHARS = re.compile(r'[\[\]\" “”]') # add space
 INDEX_PATHS = map(Path, ['about', 'pages', 'posts'])
 BOOKMARKS_PATHS = map(Path, ['_bookmarks'])
-TAGS_PATHS = map(Path, ['.'])
+TAGS_PATHS = map(Path, ['posts', 'pages', 'about'])
 
 EXTS = ('md', 'html', 'htm')
 TAGS_DIR = 'tags'
@@ -92,7 +92,8 @@ def iterate_links(fpath: Path) -> list:
     for sub_fpath in fpath.iterdir():
         
         # md files
-        if sub_fpath.is_file() and sub_fpath.suffix == '.md':
+        if sub_fpath.is_file() and sub_fpath.suffix == '.md' and \
+            not sub_fpath.name.startswith('index.md'):
             mk = MD(sub_fpath)
             if not mk.is_draft:
                 # 如果没有时间戳表明是一个定期更新的目录，末尾显示一个提醒
@@ -233,7 +234,7 @@ if __name__ == '__main__':
 
     # 生辰所有collections的目录索引
     for fp in Path('.').iterdir():
-        if fp.is_dir() and fp.name.startswith('_'):
+        if fp.is_dir() and fp.name.endswith('_'):
             index_me(fp)
 
     # bookmarks page

@@ -38,6 +38,3 @@ title: "文摘"
 1. 2020-09-29, [那个扒下西方底裤的美国记者，死了 ](https://zhuanlan.zhihu.com/p/260059061?utm_source=com.ideashower.readitlater.pro&utm_medium=social&utm_oi=28196191862784)
 1. 2020-06-23, [Public URLs for exposing your local web server. ](https://ngrok.com/)
 1. 2020-06-23, [Web 技术文档 ](https://developer.mozilla.org/zh-CN/docs/Web)
-1. 2021-01-17, [<h2>_bookmarks</h2>
-
-<ol>... :sparkling_heart:](_bookmarks/index.md)
