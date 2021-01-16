@@ -1,0 +1,85 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: update readme.md blog
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main     
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install markdown2
+          #if [ -f bin/requirements.txt ]; then pip install -r bin/requirements.txt; fi
+
+
+      - name: update readme.md
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          python3 bin/gen.py
+      
+      - uses: EndBug/add-and-commit@v6 # You can change this to use a specific version
+        with:
+          # The arguments for the `git add` command (see the paragraph below for more info)
+          # Default: '.'
+          # add: '.'
+
+          # The name of the user that will be displayed as the author of the commit
+          # Default: author of the commit that triggered the run
+          author_name: David Li
+
+          # The email of the user that will be displayed as the author of the commit
+          # Default: author of the commit that triggered the run
+          author_email: foo@bar.com
+
+          # Name of the branch to use, if different from the one that triggered the workflow
+          # Default: the branch that triggered the run
+          # branch: master
+
+          # The local path to the directory where your repository is located. You should use actions/checkout first to set it up
+          # Default: '.'
+          # cwd: '.'
+
+          # The message for the commit
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: 'routine update readme.md'
+
+          # The flag used on the pull strategy
+          # Default: '--no-rebase'
+          # pull_strategy: '--no-rebase or --no-ff or --rebase'
+
+          # Whether to push the commit and, if any, its tags to the repo. It can also be used to set the git push arguments (see the paragraph below for more info)
+          # Default: true
+          push: true
+
+          # The arguments for the `git rm` command (see the paragraph below for more info)
+          # Default: ''
+          # remove: '.'
+
+          # Whether to use the --signoff option on `git commit` (only `true` and `false` are accepted)
+          # Default: false
+          signoff: true
+
+          # Arguments for the git tag command (the tag name always needs to be the first word not preceded by an hyphen)
+          # Default: ''
+          tag: 'v1.0.0 --force'
+
+          # The token to use to access the GitHub API when getting the author info (see the paragraph below for more info about the tokens used by the action)
+          # Default: secrets.GITHUB_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,9 @@
+jiagu
+akshare
+pandas
+matplotlib
+pytz
+html2text
+jieba
+tushare
+progressbar
