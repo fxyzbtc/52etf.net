@@ -16,7 +16,7 @@ RE_TITLE = re.compile(r'(?<=<title>).*(?=</title>)')
 META_INVALID_TITLE_CHARS = re.compile(r'[\[\]\"“”]')
 META_INVALID_TAG_CHARS = re.compile(r'[\[\]\" “”]') # add space
 INDEX_PATHS = map(Path, ['about', 'pages', 'posts'])
-BOOKMARKS_PATHS = map(Path, ['_bookmarks'])
+BOOKMARKS_PATHS = map(Path, ['bookmarks_'])
 TAGS_PATHS = map(Path, ['posts', 'pages', 'about'])
 
 EXTS = ('md', 'html', 'htm')

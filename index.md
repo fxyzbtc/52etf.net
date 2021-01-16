@@ -5,7 +5,7 @@
 1. 2021-01-17, [Tags :sparkling_heart:](about/tags.md)
 ## pages
 1. 2021-01-17, [文摘 :sparkling_heart:](pages/bookmarks.md)
-1. 2021-01-17, [公众号文摘 :sparkling_heart:](weixin_/index.md)
+1. 2021-01-17, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
 ## posts
 1. 2020-03-19, [用Python实现折价溢价基金提醒 ](posts/2020-03-19-使用Python实现自动提醒折溢价基金.md)

@@ -2,7 +2,7 @@
 title: "文摘"
 ---
 
-## _bookmarks
+## bookmarks_
 1. 2020-06-08, [ETF LOF 和套利浅谈 ]("https://re-ra.xyz/ETF-LOF-%E5%92%8C%E5%A5%97%E5%88%A9%E6%B5%85%E8%B0%88/")
 1. 2020-06-23, [Getting your reading history out of Pocket using Python ](https://medium.com/@alexdambra/getting-your-reading-history-out-of-pocket-using-python-b4253dbe865c)
 1. 2020-06-26, [Python 量化交易教程 · GitBook ](https://legacy.gitbook.com/book/wizardforcel/python-quant-uqer/details)
