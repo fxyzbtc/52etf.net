@@ -40,4 +40,4 @@ title: "文摘"
 1. 2020-06-23, [Web 技术文档 ](https://developer.mozilla.org/zh-CN/docs/Web)
 1. 2021-01-17, [<h2>_bookmarks</h2>
 
-<ol>... :sparkling_heart:](index.md)
+<ol>... :sparkling_heart:](_bookmarks/index.md)

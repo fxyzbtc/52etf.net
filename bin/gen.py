@@ -108,7 +108,7 @@ def iterate_links(fpath: Path) -> list:
                     result.append(f'1. {mk.date}, [{mk.title} {_new}]({mk.itemurl})')
                 # regular md
                 else:
-                    result.append(f'1. {mk.date}, [{mk.title} {_new}]({sub_fpath.name})')
+                    result.append(f'1. {mk.date}, [{mk.title} {_new}]({fpath.name}/{sub_fpath.name})')
         # or html files
         if sub_fpath.is_file() and sub_fpath.suffix == '.html':
             title = extract_html_title(sub_fpath)
@@ -184,6 +184,7 @@ def gen_tag_pages(dirs, index: Path, tpl: str) -> None:
 def update_index_item(fp: Path) -> None:
     pass
 
+# TODO: 合并index_me和iterate_link，is_index=True, yes-> with fpath, no-> without fpath prefix
 def index_me(fp: Path) -> None:
     ''' 自动生成一些目录的index.md索引'''
     with open(f'{fp.absolute()}/index.md', 'w', encoding='utf8') as writer:
