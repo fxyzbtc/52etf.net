@@ -1,12 +1,12 @@
-> Last Update: 2021-01-21
+> Last Update: 2021-01-22
 
 ## about
 1. 2020-12-26, [关于我们 ](about/me.md)
-1. 2021-01-21, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-01-22, [Tags :sparkling_heart:](about/tags.md)
 ## pages
-1. 2021-01-21, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-01-22, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-01-21, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-01-22, [文摘 :sparkling_heart:](pages/bookmarks.md)
 ## posts
 1. 2020-06-24, [管理好自己的仓位 ](posts/2020-06-24-管理好自己的仓位.md)
 1. 2020-05-06, [简单准确的理解债券市场（二） ](posts/2020-05-06-简单准确的理解债券市场（二）.md)
