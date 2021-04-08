@@ -1,12 +1,12 @@
-> Last Update: 2021-04-07
+> Last Update: 2021-04-08
 
 ## about
-1. 2021-04-07, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-04-08, [Tags :sparkling_heart:](about/tags.md)
 1. 2020-12-26, [关于我们 ](about/me.md)
 ## pages
-1. 2021-04-07, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-04-08, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-04-07, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-04-08, [文摘 :sparkling_heart:](pages/bookmarks.md)
 ## posts
 1. 2020-07-02, [长赢指数投资品种的相关性研究 ](posts/2020-07-02-长赢指数投资品种的相关性研究.md)
 1. 2020-06-09, [ETF拯救世界*雪球长文*完美合集版2020最新 ](posts/ETF拯救世界雪球长文完美合集版2020最新.md)
