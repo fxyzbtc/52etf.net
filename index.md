@@ -1,12 +1,12 @@
-> Last Update: 2021-09-09
+> Last Update: 2021-09-10
 
 ## about
 1. 2020-12-26, [关于我们 ](about/me.md)
-1. 2021-09-09, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-09-10, [Tags :sparkling_heart:](about/tags.md)
 ## pages
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-09-09, [文摘 :sparkling_heart:](pages/bookmarks.md)
-1. 2021-09-09, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-09-10, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-09-10, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 ## posts
 1. 2020-05-28, [按估值买卖 ](posts/2020-05-28-按估值买卖的逻辑依据.md)
 1. 2020-06-29, [【投资体系】如何使用趋势指标 ](posts/2020-06-29-趋势债券和指标.md)
