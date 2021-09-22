@@ -1,12 +1,12 @@
-> Last Update: 2021-09-21
+> Last Update: 2021-09-22
 
 ## about
-1. 2021-09-21, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-09-22, [Tags :sparkling_heart:](about/tags.md)
 1. 2020-12-26, [关于我们 ](about/me.md)
 ## pages
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-09-21, [文摘 :sparkling_heart:](pages/bookmarks.md)
-1. 2021-09-21, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-09-22, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-09-22, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 ## posts
 1. 2020-06-17, [新闻联播文字稿-日更 ]("/xwlb/")
 1. 2020-07-09, [所谓牛市的心情记录04 ](posts/2020-07-09-所谓牛市的心情记录04.md)
