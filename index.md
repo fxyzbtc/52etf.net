@@ -1,12 +1,12 @@
-> Last Update: 2021-10-16
+> Last Update: 2021-10-17
 
 ## about
-1. 2021-10-16, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-10-17, [Tags :sparkling_heart:](about/tags.md)
 1. 2020-12-26, [关于我们 ](about/me.md)
 ## pages
-1. 2021-10-16, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-10-17, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-10-16, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-10-17, [文摘 :sparkling_heart:](pages/bookmarks.md)
 ## posts
 1. 2020-07-09, [所谓牛市的心情记录04 ](posts/2020-07-09-所谓牛市的心情记录04.md)
 1. 2020-06-23, [如何用凯利公式来管理基金仓位 ](posts/2020-06-23-使用凯利公式管理仓位.md)
