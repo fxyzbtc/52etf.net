@@ -1,12 +1,12 @@
-> Last Update: 2021-11-28
+> Last Update: 2021-11-29
 
 ## about
-1. 2021-11-28, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-11-29, [Tags :sparkling_heart:](about/tags.md)
 1. 2020-12-26, [关于我们 ](about/me.md)
 ## pages
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-11-28, [公众号文摘 :sparkling_heart:](_weixin/index.md)
-1. 2021-11-28, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-11-29, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-11-29, [文摘 :sparkling_heart:](pages/bookmarks.md)
 ## posts
 1. 2020-07-31, [根据指数选基金 ](posts/2020-07-31-根据指数选基金.md)
 1. 2020-07-29, [投资体系的赚钱原理（下） ](posts/2020-07-19-投资体系的赚钱原理（下）.md)
