@@ -1,12 +1,12 @@
-> Last Update: 2021-12-14
+> Last Update: 2021-12-15
 
 ## about
-1. 2021-12-14, [Tags :sparkling_heart:](about/tags.md)
+1. 2021-12-15, [Tags :sparkling_heart:](about/tags.md)
 1. 2020-12-26, [关于我们 ](about/me.md)
 ## pages
 1. 2020-01-01, [精选基金 ](pages/精选基金.md)
-1. 2021-12-14, [文摘 :sparkling_heart:](pages/bookmarks.md)
-1. 2021-12-14, [公众号文摘 :sparkling_heart:](_weixin/index.md)
+1. 2021-12-15, [文摘 :sparkling_heart:](pages/bookmarks.md)
+1. 2021-12-15, [公众号文摘 :sparkling_heart:](_weixin/index.md)
 ## posts
 1. 2020-06-02, [主动基的一些缺陷以及如何规避 ](posts/2020-06-02-有人说主动基金的坏话我补充几句.md)
 1. 2020-07-31, [如何挑选基金：常见业绩指标 ](posts/2020-08-10-如何分析同类基金.md)
