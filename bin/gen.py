@@ -10,13 +10,12 @@ from markdown2 import markdown
 
 logging.basicConfig(level=logging.DEBUG)
 
-AUTO_INDEX_PATH_PREFIX = '_'   # 自动更新index.md的目录
 
 RE_TITLE = re.compile(r'(?<=<title>).*(?=</title>)')
 META_INVALID_TITLE_CHARS = re.compile(r'[\[\]\"“”]')
 META_INVALID_TAG_CHARS = re.compile(r'[\[\]\" “”]') # add space
 INDEX_PATHS = map(Path, ['about', 'pages', 'posts'])
-BOOKMARKS_PATHS = map(Path, ['bookmarks_'])
+BOOKMARKS_PATHS = map(Path, ['bookmarks'])
 TAGS_PATHS = map(Path, ['posts', 'pages', 'about'])
 
 EXTS = ('md', 'html', 'htm')
@@ -27,7 +26,7 @@ POSTS_DIR = 'posts'
 # 解析html的title
 def extract_html_title(fpath: Path) -> str:
     '''提取html.title作为链接名字'''
-    html = open(fpath).read().strip()
+    html = open(fpath).read()
     try:
         title = RE_TITLE.findall(html)[0]
     except IndexError:
@@ -38,7 +37,7 @@ def extract_html_title(fpath: Path) -> str:
 class MD(object):
     def __init__(self, fpath: Path):
         with open(fpath, encoding='utf8') as fp:
-            self.md = markdown(fp.read().strip(), extras=['metadata'])
+            self.md = markdown(fp.read(), extras=['metadata'])
             self.meta = self.md.metadata
             self.path = fpath
     @property
@@ -90,31 +89,20 @@ class MD(object):
 def iterate_links(fpath: Path) -> list:
     result = []
     for sub_fpath in fpath.iterdir():
-        
         # md files
-        if sub_fpath.is_file() and sub_fpath.suffix == '.md' and \
-            not sub_fpath.name.startswith('index.md'):
+        if sub_fpath.is_file() and sub_fpath.suffix == '.md':
             mk = MD(sub_fpath)
             if not mk.is_draft:
-                # 如果没有时间戳表明是一个定期更新的目录，末尾显示一个提醒
-                try:
-                    mk.meta['date']
-                except KeyError:
-                    _new = ':sparkling_heart:'
-                else:
-                    _new = ''   
-                
                 # bookmark md without content
                 if mk.itemurl: # place mark link only
-                    result.append(f'1. {mk.date}, [{mk.title} {_new}]({mk.itemurl})')
+                    result.append(f'1. {mk.date}, [{mk.title}]({mk.itemurl})')
                 # regular md
                 else:
-                    result.append(f'1. {mk.date}, [{mk.title} {_new}]({fpath.name}/{sub_fpath.name})')
+                    result.append(f'1. {mk.date}, [{mk.title}]({fpath.name}/{sub_fpath.name})')
         # or html files
         if sub_fpath.is_file() and sub_fpath.suffix == '.html':
             title = extract_html_title(sub_fpath)
             result.append(f'1. [{title}]({fpath.name}/{sub_fpath.name})')
-        # ignore other file types
 
     return result
 
@@ -124,7 +112,7 @@ def iterate_all_pages_tags(fpath: Path) -> dict:
         if sub_fpath.suffix == '.md':
             md = MD(sub_fpath)
             try:
-                tags = META_INVALID_TAG_CHARS.sub('', md.meta['tags'])
+                tags = META_INVALID_TAG_HARS.sub('', md.meta['tags'])
                 tags = tags.strip().lower().split(',')
             except KeyError:
                 continue
@@ -182,48 +170,6 @@ def gen_tag_pages(dirs, index: Path, tpl: str) -> None:
         index_fp.write('\n'.join(result))
         logging.info(f'{index.name} is updated successfully')
 
-def update_index_item(fp: Path) -> None:
-    pass
-
-# TODO: 合并index_me和iterate_link，is_index=True, yes-> with fpath, no-> without fpath prefix
-def index_me(fp: Path) -> None:
-    ''' 自动生成一些目录的index.md索引'''
-    with open(f'{fp.absolute()}/index.md', 'w', encoding='utf8') as writer:
-        writer.write(f'## {fp.name}\n')
-        for sub_fp in fp.iterdir():
-            if sub_fp.is_file() and not sub_fp.name.startswith('index.md'):
-
-                # md files
-                if sub_fp.suffix == '.md':
-                    mk = MD(sub_fp)
-                    if not mk.is_draft:
-                        # 如果没有时间戳表明是一个定期更新的目录，末尾显示一个提醒
-                        try:
-                            mk.meta['date']
-                        except KeyError:
-                            _new = ':sparkling_heart:'
-                        else:
-                            _new = ''   
-                        
-                        # bookmark md without content
-                        if mk.itemurl: # place mark link only
-                            writer.write(f'1. {mk.date}, [{mk.title} {_new}]({mk.itemurl})\n')
-                        # regular md
-                        else:
-                            writer.write(f'1. {mk.date}, [{mk.title} {_new}]({sub_fp.name})\n')
-                # or html files
-                if sub_fp.suffix == '.html':
-                    title = extract_html_title(sub_fp)
-                    writer.write(f'1. [{title}]({sub_fp.name})\n')
-                # ignore other file types    
-
-            # 目录递归
-            if sub_fp.is_dir():
-                writer.write(f'1. [{sub_fp.name}]({sub_fp.name}/index.md)\n')
-                logging.debug(f'find dir {sub_fp.name}')
-                index_me(sub_fp)
-    return None
-
 
 if __name__ == '__main__':
     updated_time = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -231,11 +177,6 @@ if __name__ == '__main__':
     # README.md
     index_tpl = f'> Last Update: {updated_time}\n'
     gen_index(INDEX_PATHS, Path('index.md'), tpl=index_tpl)
-
-    # 生辰所有collections的目录索引
-    for fp in Path('.').iterdir():
-        if fp.is_dir() and fp.name.endswith('_'):
-            index_me(fp)
 
     # bookmarks page
     bookmarks_tpl = '''---
@@ -247,7 +188,3 @@ title: "文摘"
     tags_tpl = '''---\ntitle: Tags\n---\n## All Tags of This Site'''
     # tags
     gen_tag_pages(TAGS_PATHS, Path('about/tags.md'), tpl=tags_tpl)
-
-
-# todo: 提取文摘的关键字，写入md
-# todo: 提供文摘独立的tags和index页面
