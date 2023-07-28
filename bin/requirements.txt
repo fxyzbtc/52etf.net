@@ -2,10 +2,3 @@ jiagu
 jieba
 akshare
 sumy
-pandas
-matplotlib
-pytz
-html2text
-
-progressbar
-tqdm
