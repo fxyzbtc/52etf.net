@@ -1,6 +1,8 @@
 name: run python and Commit Files
-
 on:
+  schedule:
+    - cron: "0/5 0 * * *"
+
   push:
     branches:
       - main
