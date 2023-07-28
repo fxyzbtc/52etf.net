@@ -68,4 +68,7 @@ if __name__ == '__main__':
     news_sum = pull_news_cctv('20230728')
     dt = datetime.today().strftime("%Y%m%d")
     fname = f'{dt}_CCTV.txt'
-    save_file(fname, tpl, fname=fname, content=news_sum)
+    import os
+    if not os.path.exists(fname):
+        save_file(fname, tpl, fname=fname, content=news_sum)
+
