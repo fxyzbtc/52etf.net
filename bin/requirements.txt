@@ -1,9 +1,11 @@
 jiagu
+jieba
 akshare
+sumy
 pandas
 matplotlib
 pytz
 html2text
-jieba
-tushare
+
 progressbar
+tqdm
