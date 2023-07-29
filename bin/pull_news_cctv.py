@@ -48,6 +48,7 @@ def pull_news_cctv(date, keys=KEYS):
         return (2*'\r\n').join(news['sum'])
     else:
         print('no news is good news')
+        
 
 
 def save_file(fp, tpl, **kwargs):
@@ -76,9 +77,7 @@ if __name__ == '__main__':
         if not os.path.exists(fname):
             save_file(fname, tpl, fname=fname, content=news_sum)
         
-        return
-    
-    
-    print('no news is good news')
+    else:
+        print('no news is good news')
     
     
