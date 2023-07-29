@@ -31,5 +31,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Generated file"
+          git commit --allow-empty -m "commit generated files, continue if it is empty"
           git push
