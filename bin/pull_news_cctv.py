@@ -57,25 +57,28 @@ def save_file(fp, tpl, **kwargs):
         print(f'successfully write file {fp}')
 
 
-if __name__ == '__main__':
-    tpl = '''
+TPL = '''
     file: {fname}
     tags: #新闻联播
-    
-    {content}
+    references: https://tv.cctv.com/lm/xwlb/
+   
+     {content}
     '''
+    
+if __name__ == '__main__':
+    
     
     from zoneinfo import ZoneInfo
     from datetime import datetime
     
-    if news_sum := pull_news_cctv(dt):
-        
-        dt = datetime.today().strftime("%Y%m%d")
+    # download today news only
+    dt = datetime.today().strftime("%Y%m%d")
+    fname = f'{dt}_CCTV.txt'
     
-        fname = f'{dt}_CCTV.txt'
+    if news_sum := pull_news_cctv(dt):
         import os
         if not os.path.exists(fname):
-            save_file(fname, tpl, fname=fname, content=news_sum)
+            save_file(fname, TPL, fname=fname, content=news_sum)
         
     else:
         print('no news is good news')
