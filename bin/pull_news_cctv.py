@@ -44,8 +44,10 @@ def pull_news_cctv(date, keys=KEYS):
     # _news = news.drop(news[news['key'] == True].index, ax)
     news = news[news['key'] == True]
 
-    return (2*'\r\n').join(news['sum'])
-
+    if news.sum:
+        return (2*'\r\n').join(news['sum'])
+    else:
+        print('no news is good news')
 
 
 def save_file(fp, tpl, **kwargs):
@@ -65,10 +67,18 @@ if __name__ == '__main__':
     from zoneinfo import ZoneInfo
     from datetime import datetime
     
-    news_sum = pull_news_cctv('20230728')
-    dt = datetime.today().strftime("%Y%m%d")
-    fname = f'{dt}_CCTV.txt'
-    import os
-    if not os.path.exists(fname):
-        save_file(fname, tpl, fname=fname, content=news_sum)
-
+    if news_sum := pull_news_cctv(dt):
+        
+        dt = datetime.today().strftime("%Y%m%d")
+    
+        fname = f'{dt}_CCTV.txt'
+        import os
+        if not os.path.exists(fname):
+            save_file(fname, tpl, fname=fname, content=news_sum)
+        
+        return
+    
+    
+    print('no news is good news')
+    
+    
